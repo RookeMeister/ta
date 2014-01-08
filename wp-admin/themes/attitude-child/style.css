@@ -1,0 +1,16 @@
+/*
+ Theme Name:     Attitude Child
+ Description:    Attitude Child Theme to support Training Aspirations
+ Author:         Peter Rooke
+ Author URI:     http://rookie.co.nf
+ Template:       attitude
+ Version:        0.1
+*/
+
+@import url("../attitude/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.entry-meta .by-author {
+display: none;
+}

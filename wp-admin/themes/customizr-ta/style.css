@@ -1,0 +1,13 @@
+/*
+ Theme Name:     Customizr TA	
+ Description:    This is a child of the Customizr Theme to support Training Aspirations. * Added action and function to remove post navigation links * Removed all text showing post metadata * Set designer name in footer
+ Author:         Peter Rooke
+ Author URI:     http://rookie.co.nf
+ Template:       customizr
+ Version:        0.1
+*/
+
+@import url("../customizr/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
