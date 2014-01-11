@@ -30,4 +30,18 @@ function format_dps_title( $output, $atts, $image, $title, $date, $excerpt, $inn
 	return $output;
 }
 
+function custom_button_example($wp_admin_bar){
+$args = array(
+'id' => 'custom-button',
+'title' => 'Custom Button',
+'href' => 'http://example.com/',
+'meta' => array(
+'class' => 'custom-button-class'
+)
+);
+$wp_admin_bar->add_node($args);
+}
+
+add_action('admin_bar_menu', 'custom_button_example', 50);
+
 ?>
