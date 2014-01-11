@@ -47,4 +47,37 @@ function wip_button($wp_admin_bar){
 	$wp_admin_bar->add_node($args);
 }
 
+// Peter Rooke
+//----------------------------------------------------------
+// Add action and function to default All Posts to Published
+//----------------------------------------------------------
+add_action( 'admin_menu', 'default_published_wpse_91299' );
+function default_published_wpse_91299() 
+{
+    global $submenu;
+
+    // POSTS
+    foreach( $submenu['edit.php'] as $key => $value )
+    {
+        if( in_array( 'edit.php', $value ) )
+        {
+            $submenu['edit.php'][ $key ][2] = 'edit.php?post_status=publish&post_type=post';
+        }
+    }
+
+    // OTHER POST TYPES
+    // $cpt = array( 'page', 'portfolio' );  <--- remove or adapt the portfolio post type or other types?
+    $cpt = array( 'page', );
+    foreach( $cpt as $pt )
+    {
+        foreach( $submenu[ 'edit.php?post_type=' . $pt ] as $key => $value )
+        {
+            if( in_array( 'edit.php?post_type=' . $pt, $value ) )
+            {
+                $submenu[ 'edit.php?post_type='.$pt ][ $key ][2] = 'edit.php?post_status=publish&post_type=' . $pt;
+            }
+        }   
+    }
+}
+
 ?>
