@@ -11,3 +11,15 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+/* In order to get the image floating to the left
+ when displaying a list of posts with title, excerpt, and the thumbnail, using Display Posts Shortcode
+*/
+.display-posts-listing .listing-item {
+	clear: both;
+}
+
+.display-posts-listing img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
