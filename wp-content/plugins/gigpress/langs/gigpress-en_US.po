@@ -19,17 +19,17 @@ msgstr ""
 #: ../gigpress.php:65
 #: ../admin/new.php:199
 msgid "Add a show"
-msgstr "Add a session"
+msgstr "Add a course"
 
 #: ../gigpress.php:66
 #: ../admin/shows.php:126
 msgid "Shows"
-msgstr "Sessions"
+msgstr "Courses"
 
 #: ../gigpress.php:67
 #: ../admin/artists.php:34
 msgid "Artists"
-msgstr "Courses"
+msgstr "Subjects"
 
 #: ../gigpress.php:68
 #: ../admin/venues.php:29
@@ -108,7 +108,7 @@ msgstr ""
 #: ../gigpress.php:285
 #: ../admin/new.php:473
 msgid "Sold Out"
-msgstr "Session Full"
+msgstr "Course Full"
 
 #: ../gigpress.php:287
 #: ../admin/new.php:474
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../gigpress.php:496
 msgid "Artist order updated."
-msgstr "Course order updated."
+msgstr "Subject order updated."
 
 #: ../gigpress.php:547
 msgid "Nothing to export."
@@ -138,7 +138,7 @@ msgstr ""
 
 #: ../admin/artists.php:44
 msgid "Update artist"
-msgstr "Update course"
+msgstr "Update subject"
 
 #: ../admin/artists.php:44
 #: ../admin/new.php:596
@@ -156,40 +156,40 @@ msgstr ""
 
 #: ../admin/artists.php:46
 msgid "Edit this artist"
-msgstr "Edit this course"
+msgstr "Edit this subject"
 
 #: ../admin/artists.php:56
 msgid "Sorry, but we had trouble loading that artist for editing."
-msgstr "Sorry, but we had trouble loading that course for editing."
+msgstr "Sorry, but we had trouble loading that subject for editing."
 
 #: ../admin/artists.php:58
 #: ../admin/artists.php:68
 msgid "Add an artist"
-msgstr "Add a course"
+msgstr "Add a subject"
 
 #: ../admin/artists.php:66
 msgid "Add artist"
-msgstr "Add course"
+msgstr "Add subject"
 
 #: ../admin/artists.php:79
 #: ../admin/artists.php:124
 #: ../admin/artists.php:169
 #: ../admin/new.php:383
 msgid "Artist name"
-msgstr "Course name"
+msgstr "Subject name"
 
 #: ../admin/artists.php:85
 #: ../admin/new.php:387
 msgid "Artist URL"
-msgstr "Course URL"
+msgstr "Subject URL"
 
 #: ../admin/artists.php:100
 msgid "All artists"
-msgstr "All courses"
+msgstr "All subjects"
 
 #: ../admin/artists.php:103
 msgid "Note that you cannot delete an artist while they have shows in the database."
-msgstr "Note that you cannot delete a course while the course has a session in the database."
+msgstr "Note that you cannot delete a subject while the subject has a course in the database."
 
 #: ../admin/artists.php:125
 #: ../admin/artists.php:170
@@ -198,7 +198,7 @@ msgstr "Note that you cannot delete a course while the course has a session in t
 #: ../admin/venues.php:187
 #: ../admin/venues.php:240
 msgid "Number of shows"
-msgstr "Number of sessions"
+msgstr "Number of course"
 
 #: ../admin/artists.php:126
 #: ../admin/artists.php:171
@@ -229,11 +229,11 @@ msgstr ""
 #: ../admin/new.php:372
 #: ../admin/shows.php:159
 msgid "No artists in the database"
-msgstr "No courses in the database"
+msgstr "No subjects in the database"
 
 #: ../admin/handlers.php:52
 msgid "We had trouble creating your new artist. Sorry."
-msgstr "We had trouble creating your new course. Sorry."
+msgstr "We had trouble creating your new subject. Sorry."
 
 #: ../admin/handlers.php:67
 msgid "We had trouble creating your new venue. Sorry."
@@ -253,12 +253,12 @@ msgstr ""
 
 #: ../admin/handlers.php:182
 msgid "You must select an artist."
-msgstr "You must select a course."
+msgstr "You must select a subject."
 
 #: ../admin/handlers.php:184
 #: ../admin/handlers.php:198
 msgid "You must enter an artist name."
-msgstr "You must enter a course name."
+msgstr "You must enter a subject name."
 
 #: ../admin/handlers.php:186
 #: ../admin/handlers.php:206
@@ -286,7 +286,7 @@ msgstr ""
 #: ../admin/handlers.php:248
 #: ../admin/handlers.php:309
 msgid "Your show  on"
-msgstr "Your session on"
+msgstr "Your course on"
 
 #: ../admin/handlers.php:248
 msgid "was successfully added."
@@ -294,7 +294,7 @@ msgstr ""
 
 #: ../admin/handlers.php:249
 msgid "Add a similar show"
-msgstr "Add a similar session"
+msgstr "Add a similar course"
 
 #: ../admin/handlers.php:250
 #: ../admin/handlers.php:309
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../admin/handlers.php:359
 msgid "Show(s) successfully deleted."
-msgstr "Session(s) successfully deleted."
+msgstr "Course(s) successfully deleted."
 
 #: ../admin/handlers.php:360
 #: ../admin/handlers.php:593
@@ -328,7 +328,7 @@ msgstr ""
 
 #: ../admin/handlers.php:366
 msgid "We ran into some trouble deleting the show(s). Sorry."
-msgstr "We ran into some trouble deleting the session(s). Sorry."
+msgstr "We ran into some trouble deleting the course(s). Sorry."
 
 #: ../admin/handlers.php:406
 #: ../admin/handlers.php:510
@@ -362,19 +362,19 @@ msgstr ""
 
 #: ../admin/handlers.php:708
 msgid "Artist successfully deleted."
-msgstr "Course successfully deleted."
+msgstr "Subject successfully deleted."
 
 #: ../admin/handlers.php:711
 msgid "We ran into some trouble deleting the artist. Sorry."
-msgstr "We ran into some trouble deleting the course. Sorry."
+msgstr "We ran into some trouble deleting the subject. Sorry."
 
 #: ../admin/handlers.php:748
 msgid "Show(s) successfully restored."
-msgstr "Session(s) successfully restored."
+msgstr "Course(s) successfully restored."
 
 #: ../admin/handlers.php:752
 msgid "We ran into some trouble restoring your show(s). Sorry."
-msgstr "We ran into some trouble restoring your session(s). Sorry."
+msgstr "We ran into some trouble restoring your course(s). Sorry."
 
 #: ../admin/handlers.php:770
 msgid "Tour successfully restored from the database."
@@ -386,7 +386,7 @@ msgstr "We ran into some trouble restoring the roadshow. Sorry."
 
 #: ../admin/handlers.php:907
 msgid "shows were skipped due to errors"
-msgstr "sessions were skipped due to errors"
+msgstr "courses were skipped due to errors"
 
 #: ../admin/handlers.php:910
 #: ../admin/handlers.php:919
@@ -404,11 +404,11 @@ msgstr ""
 
 #: ../admin/handlers.php:916
 msgid "shows were skipped as they were deemed duplicates"
-msgstr "sessions were skipped as they were deemed duplicates"
+msgstr "courses were skipped as they were deemed duplicates"
 
 #: ../admin/handlers.php:925
 msgid "shows were successfully imported"
-msgstr "sessions were successfully imported"
+msgstr "courses were successfully imported"
 
 #: ../admin/handlers.php:935
 msgid "Sorry, but there was an error parsing your file. Maybe double-check your formatting and file type?"
@@ -420,7 +420,7 @@ msgstr ""
 
 #: ../admin/handlers.php:963
 msgid "All shows and tours in the trash have been permanently deleted."
-msgstr "All sessions and roadshows in the trash have been permanently deleted."
+msgstr "All courses and roadshows in the trash have been permanently deleted."
 
 #: ../admin/handlers.php:965
 msgid "We ran into some trouble emptying the trash. Sorry."
@@ -428,11 +428,11 @@ msgstr ""
 
 #: ../admin/handlers.php:987
 msgid "All tours have been migrated into artists."
-msgstr "All roadshows have been migrated into courses."
+msgstr "All roadshows have been migrated into subjects."
 
 #: ../admin/handlers.php:989
 msgid "There was an error migrating tours to artists. Sorry."
-msgstr "There was an error migrating roadshows to courses. Sorry."
+msgstr "There was an error migrating roadshows to subjects. Sorry."
 
 #: ../admin/handlers.php:993
 msgid "There were no tours to migrate."
@@ -460,7 +460,7 @@ msgstr ""
 
 #: ../admin/import-export.php:57
 msgid "Export all artists"
-msgstr "Export all courses"
+msgstr "Export all subjects"
 
 #: ../admin/import-export.php:71
 msgid "Export all tours"
@@ -491,7 +491,7 @@ msgstr ""
 
 #: ../admin/new.php:32
 msgid "<strong>Welcome to GigPress!</strong> Get started by adding your first show below. To display your shows, simply add the"
-msgstr "<strong>Welcome to GigPress!</strong> Get started by adding your first session below. To display your sessions, simply add the"
+msgstr "<strong>Welcome to GigPress!</strong> Get started by adding your first course below. To display your courses, simply add the"
 
 #: ../admin/new.php:32
 msgid "shortcode to any page or post."
@@ -524,11 +524,11 @@ msgstr ""
 
 #: ../admin/new.php:146
 msgid "Sorry, but we had trouble loading that show for editing."
-msgstr "Sorry, but we had trouble loading that session for editing."
+msgstr "Sorry, but we had trouble loading that course for editing."
 
 #: ../admin/new.php:190
 msgid "Edit this show"
-msgstr "Edit this session"
+msgstr "Edit this course"
 
 #: ../admin/new.php:213
 #: ../admin/settings.php:134
@@ -545,7 +545,7 @@ msgstr ""
 
 #: ../admin/new.php:322
 msgid "This is a multi-day event"
-msgstr "This is a multi-day session"
+msgstr "This is a multi-day course"
 
 #: ../admin/new.php:327
 msgid "End date"
@@ -555,11 +555,11 @@ msgstr ""
 #: ../admin/shows.php:222
 #: ../admin/shows.php:234
 msgid "Artist"
-msgstr "Course"
+msgstr "Subject"
 
 #: ../admin/new.php:361
 msgid "Add a new artist"
-msgstr "Add a new course"
+msgstr "Add a new subject"
 
 #: ../admin/new.php:396
 #: ../admin/shows.php:223
@@ -651,7 +651,7 @@ msgstr ""
 
 #: ../admin/new.php:515
 msgid "Use this space to list other bands, 'presented by' info, etc"
-msgstr "Use this space to list other courses of interest ..."
+msgstr "Use this space to list other subjects of interest ..."
 
 #: ../admin/new.php:519
 msgid "Part of a tour?"
@@ -694,27 +694,27 @@ msgstr ""
 
 #: ../admin/new.php:587
 msgid "Publish on show date"
-msgstr "Publish on session date"
+msgstr "Publish on course date"
 
 #: ../admin/new.php:596
 msgid "Update show"
-msgstr "Update session"
+msgstr "Update course"
 
 #: ../admin/new.php:600
 msgid "Add show"
-msgstr "Add session"
+msgstr "Add course"
 
 #: ../admin/settings.php:22
 msgid "Full URL to your 'Upcoming Shows' page"
-msgstr "Full URL to your 'Upcoming Sessions' page"
+msgstr "Full URL to your 'Upcoming Courses' page"
 
 #: ../admin/settings.php:27
 msgid "No upcoming shows message"
-msgstr "No upcoming sessions message"
+msgstr "No upcoming courses message"
 
 #: ../admin/settings.php:33
 msgid "No past shows message"
-msgstr "No past sessions message"
+msgstr "No past courses message"
 
 #: ../admin/settings.php:40
 msgid "User level required to use GigPress"
@@ -764,7 +764,7 @@ msgstr ""
 
 #: ../admin/settings.php:75
 msgid "Artist label"
-msgstr "Course label"
+msgstr "Subject label"
 
 #: ../admin/settings.php:81
 msgid "Tour label"
@@ -809,7 +809,7 @@ msgstr ""
 
 #: ../admin/settings.php:108
 msgid "Related show heading"
-msgstr "Related session heading"
+msgstr "Related course heading"
 
 #: ../admin/settings.php:111
 msgid "This appears before the gig details in your related post."
@@ -821,7 +821,7 @@ msgstr ""
 
 #: ../admin/settings.php:117
 msgid "Automatically create a related post for every new show I enter."
-msgstr "Automatically create a related post for every new session I enter."
+msgstr "Automatically create a related post for every new course I enter."
 
 #: ../admin/settings.php:118
 msgid "When creating related posts, put them in this category"
@@ -837,7 +837,7 @@ msgstr ""
 
 #: ../admin/settings.php:133
 msgid "Place a link to each show's related post in the following fields"
-msgstr "Place a link to each session's related post in the following fields"
+msgstr "Place a link to each course's related post in the following fields"
 
 #: ../admin/settings.php:135
 #: ../admin/shows.php:224
@@ -854,15 +854,15 @@ msgstr ""
 
 #: ../admin/settings.php:143
 msgid "This appears in your shows listing."
-msgstr "This appears in your sessions listing."
+msgstr "This appears in your courses listing."
 
 #: ../admin/settings.php:147
 msgid "Artist URLs"
-msgstr "Course URLs"
+msgstr "Subject URLs"
 
 #: ../admin/settings.php:148
 msgid "Link artist names to their URLs."
-msgstr "Link course names to their URLs."
+msgstr "Link subject names to their URLs."
 
 #: ../admin/settings.php:152
 msgid "RSS/iCal"
@@ -946,7 +946,7 @@ msgstr ""
 
 #: ../admin/shows.php:151
 msgid "View all artists"
-msgstr "View all courses"
+msgstr "View all subjects"
 
 #: ../admin/shows.php:165
 msgid "View all tours"
@@ -983,11 +983,11 @@ msgstr ""
 
 #: ../admin/shows.php:283
 msgid "Sorry, no shows to display based on your criteria."
-msgstr "Sorry, no sessions to display based on your criteria."
+msgstr "Sorry, no courses to display based on your criteria."
 
 #: ../admin/shows.php:289
 msgid "Trash selected shows"
-msgstr "Trash selected sessions"
+msgstr "Trash selected courses"
 
 #: ../admin/shows.php:303
 msgid "You have"
@@ -995,7 +995,7 @@ msgstr ""
 
 #: ../admin/shows.php:303
 msgid "shows"
-msgstr "sessions"
+msgstr "courses"
 
 #: ../admin/shows.php:303
 msgid "tours"
@@ -1011,7 +1011,7 @@ msgstr ""
 
 #: ../admin/tours.php:36
 msgid "A tour is simply a named collection of shows that you want to group together."
-msgstr "A roadshow is simply a named collection of sessions that you want to group together."
+msgstr "A roadshow is simply a named collection of courses that you want to group together."
 
 #: ../admin/tours.php:49
 msgid "Update tour"
@@ -1040,7 +1040,7 @@ msgstr "All roadshows"
 
 #: ../admin/tours.php:92
 msgid "Note that deleting a tour will <strong>NOT</strong> delete the shows associated with that tour."
-msgstr "Note that deleting a roadshow will <strong>NOT</strong> delete the sessions associated with that roadshow."
+msgstr "Note that deleting a roadshow will <strong>NOT</strong> delete the courses associated with that roadshow."
 
 #: ../admin/venues.php:71
 msgid "Sorry, but we had trouble loading that venue for editing."
@@ -1068,7 +1068,7 @@ msgstr ""
 
 #: ../admin/venues.php:164
 msgid "Note that you cannot delete a venue while it has shows in the database."
-msgstr "Note that you cannot delete a venue while it has sessions in the database."
+msgstr "Note that you cannot delete a venue while it has courses in the database."
 
 #: ../admin/venues.php:182
 #: ../admin/venues.php:235
@@ -1104,7 +1104,7 @@ msgstr ""
 
 #: ../output/gigpress_sidebar.php:8
 msgid "List upcoming GigPress shows"
-msgstr "List upcoming GigPress sessions"
+msgstr "List upcoming GigPress courses"
 
 #: ../output/gigpress_sidebar.php:79
 msgid "Title"
@@ -1112,51 +1112,51 @@ msgstr ""
 
 #: ../output/gigpress_sidebar.php:87
 msgid "Display upcoming shows"
-msgstr "Display upcoming sessions"
+msgstr "Display upcoming courses"
 
 #: ../output/gigpress_sidebar.php:90
 msgid "Display today's shows"
-msgstr "Display today's sessions"
+msgstr "Display today's courses"
 
 #: ../output/gigpress_sidebar.php:93
 msgid "Display past shows"
-msgstr "Display past sessions"
+msgstr "Display past courses"
 
 #: ../output/gigpress_sidebar.php:99
 msgid "Number of shows to list"
-msgstr "Number of sessions to list"
+msgstr "Number of courses to list"
 
 #: ../output/gigpress_sidebar.php:106
 msgid "Only display shows from this artist"
-msgstr "Only display sessions from this course"
+msgstr "Only display courses from this subject"
 
 #: ../output/gigpress_sidebar.php:121
 msgid "Only display shows from this tour"
-msgstr "Only display sessions from this roadshow"
+msgstr "Only display courses from this roadshow"
 
 #: ../output/gigpress_sidebar.php:136
 msgid "Only display shows from this venue"
-msgstr "Only display sessions from this venue"
+msgstr "Only display courses from this venue"
 
 #: ../output/gigpress_sidebar.php:152
 msgid "Group by artist"
-msgstr "Group by course"
+msgstr "Group by subject"
 
 #: ../output/gigpress_sidebar.php:153
 msgid "Ignored when filtering by artist, tour, or venue."
-msgstr "Ignored when filtering by course, roadshow, or venue."
+msgstr "Ignored when filtering by subject, roadshow, or venue."
 
 #: ../output/gigpress_sidebar.php:160
 msgid "Order artists alphabetically"
-msgstr "Order courses alphabetically"
+msgstr "Order subjects alphabetically"
 
 #: ../output/gigpress_sidebar.php:163
 msgid "Order artists by custom order"
-msgstr "Order courses by custom order"
+msgstr "Order subjects by custom order"
 
 #: ../output/gigpress_sidebar.php:166
 msgid "Ignored when not grouping by artist."
-msgstr "Ignored when not grouping by course."
+msgstr "Ignored when not grouping by subject."
 
 #: ../output/gigpress_sidebar.php:172
 msgid "Group by tour"
