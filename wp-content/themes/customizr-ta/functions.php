@@ -64,20 +64,6 @@ function default_published_wpse_91299()
             $submenu['edit.php'][ $key ][2] = 'edit.php?post_status=publish&post_type=post';
         }
     }
-
-    // OTHER POST TYPES
-    // $cpt = array( 'page', 'portfolio' );  <--- remove or adapt the portfolio post type or other types?
-    $cpt = array( 'page', );
-    foreach( $cpt as $pt )
-    {
-        foreach( $submenu[ 'edit.php?post_type=' . $pt ] as $key => $value )
-        {
-            if( in_array( 'edit.php?post_type=' . $pt, $value ) )
-            {
-                $submenu[ 'edit.php?post_type='.$pt ][ $key ][2] = 'edit.php?post_status=publish&post_type=' . $pt;
-            }
-        }   
-    }
 }
 
 ?>
