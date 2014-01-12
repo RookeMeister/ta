@@ -440,7 +440,7 @@ msgstr "There were no roadshows to migrate."
 
 #: ../admin/import-export.php:18
 msgid "Upload a CSV (comma-separated values) file to import into your GigPress database."
-msgstr ""
+msgstr "Upload a CSV (comma-separated values) file to import into your Training database."
 
 #: ../admin/import-export.php:18
 msgid "Please review the formatting specifications to save yourself headaches!"
@@ -456,7 +456,7 @@ msgstr ""
 
 #: ../admin/import-export.php:48
 msgid "Download your complete show database as a CSV (comma-separated values) file, compatible with programs such as Microsoft Excel. This file is also suitable to import into another GigPress installation."
-msgstr ""
+msgstr "Download your complete show database as a CSV (comma-separated values) file, compatible with programs such as Microsoft Excel. This file is also suitable to import into another Training installation."
 
 #: ../admin/import-export.php:57
 msgid "Export all artists"
@@ -491,7 +491,7 @@ msgstr ""
 
 #: ../admin/new.php:32
 msgid "<strong>Welcome to GigPress!</strong> Get started by adding your first show below. To display your shows, simply add the"
-msgstr "<strong>Welcome to GigPress!</strong> Get started by adding your first course below. To display your courses, simply add the"
+msgstr "<strong>Welcome to Training!</strong> Get started by adding your first course below. To display your courses, simply add the"
 
 #: ../admin/new.php:32
 msgid "shortcode to any page or post."
@@ -718,7 +718,7 @@ msgstr "No past courses message"
 
 #: ../admin/settings.php:40
 msgid "User level required to use GigPress"
-msgstr ""
+msgstr "User level required to use Training"
 
 #: ../admin/settings.php:43
 msgid "Administrator"
@@ -870,7 +870,7 @@ msgstr ""
 
 #: ../admin/settings.php:154
 msgid "Make the GigPress RSS feed auto-discoverable."
-msgstr ""
+msgstr "Make the Training RSS feed auto-discoverable."
 
 #: ../admin/settings.php:155
 msgid "Show RSS and iCal subscription links."
@@ -878,7 +878,7 @@ msgstr ""
 
 #: ../admin/settings.php:156
 msgid "Note that the FeedBurner FeedSmith plugin will kill your GigPress RSS and iCal feeds, but the FD FeedBurner plugin will not."
-msgstr ""
+msgstr "Note that the FeedBurner FeedSmith plugin will kill your Training RSS and iCal feeds, but the FD FeedBurner plugin will not."
 
 #: ../admin/settings.php:160
 msgid "RSS/iCal feed title"
@@ -922,11 +922,11 @@ msgstr ""
 
 #: ../admin/settings.php:187
 msgid "Disable the default GigPress CSS."
-msgstr ""
+msgstr "Disable the default Training CSS."
 
 #: ../admin/settings.php:187
 msgid "Disable the default GigPress JavaScript."
-msgstr ""
+msgstr "Disable the default Training JavaScript."
 
 #: ../admin/settings.php:206
 msgid "Save Changes"
@@ -1104,7 +1104,7 @@ msgstr ""
 
 #: ../output/gigpress_sidebar.php:8
 msgid "List upcoming GigPress shows"
-msgstr "List upcoming GigPress courses"
+msgstr "List upcoming Training courses"
 
 #: ../output/gigpress_sidebar.php:79
 msgid "Title"
@@ -1172,7 +1172,7 @@ msgstr ""
 
 #: ../output/gigpress_sidebar.php:186
 msgid "This phrase is used to link to the page specified in your GigPress settings. (Leave blank to disable this link.)"
-msgstr ""
+msgstr "This phrase is used to link to the page specified in your Training settings. (Leave blank to disable this link.)"
 
 #: ../templates/shows-list-footer.php:15
 #: ../templates/sidebar-list-footer.php:21
