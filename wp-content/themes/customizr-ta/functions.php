@@ -4,8 +4,8 @@
 //----------------------------------------------------------
 // Add action and function to remove post navigation links
 //----------------------------------------------------------
-add_action ( 'wp_head', 'remove_single_post_nav_links');
-function remove_single_post_nav_links() {
+add_action ( 'wp_head', 'ta_remove_single_post_nav_links');
+function ta_remove_single_post_nav_links() {
     // remove the navigation links for a single post and not for the list of posts
     if ( !is_single() )
         return;
@@ -17,8 +17,8 @@ function remove_single_post_nav_links() {
 //----------------------------------------------------------
 // Display Posts Shortcode plugin: add H3 to title
 //----------------------------------------------------------
-add_filter( 'display_posts_shortcode_output', 'format_dps_title', 10, 7 );
-function format_dps_title( $output, $atts, $image, $title, $date, $excerpt, $inner_wrapper ) {
+add_filter( 'display_posts_shortcode_output', 'ta_format_dps_title', 10, 7 );
+function ta_format_dps_title( $output, $atts, $image, $title, $date, $excerpt, $inner_wrapper ) {
 
 	// Make Title and H2
 	$title = ' <h3>'. $title .'</h3>';
@@ -34,12 +34,12 @@ function format_dps_title( $output, $atts, $image, $title, $date, $excerpt, $inn
 //----------------------------------------------------------
 // Add action and function to add WIP button to Admin bar
 //----------------------------------------------------------
-add_action('admin_bar_menu', 'wip_button', 95);
-function wip_button($wp_admin_bar){
+add_action('admin_bar_menu', 'ta_wip_button', 95);
+function ta_wip_button($wp_admin_bar){
 	$args = array(
 		'id' => 'wip-button',
 		'title' => 'Work In Progress',
-		'href' => 'http://www.rookemeister.com/ta/?page_id=274',
+		'href' => 'http://rookemeister.com/ta/wip',
 		'meta' => array(
 			'class' => 'custom-button-class'
 		)
@@ -51,8 +51,8 @@ function wip_button($wp_admin_bar){
 //----------------------------------------------------------
 // Add action and function to default All Posts to Published
 //----------------------------------------------------------
-add_action( 'admin_menu', 'default_published_wpse_91299' );
-function default_published_wpse_91299() 
+add_action( 'admin_menu', 'ta_default_published' );
+function ta_default_published() 
 {
     global $submenu;
 
@@ -64,6 +64,17 @@ function default_published_wpse_91299()
             $submenu['edit.php'][ $key ][2] = 'edit.php?post_status=publish&post_type=post';
         }
     }
+}
+
+// Peter Rooke
+//----------------------------------------------------------
+// Add action and function to remove comments from admin bar
+//----------------------------------------------------------
+add_action( 'wp_before_admin_bar_render', 'ta_admin_bar_render' );
+function ta_admin_bar_render() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('comments');
+    
 }
 
 ?>
