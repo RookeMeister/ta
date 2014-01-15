@@ -23,3 +23,13 @@
 	float: left;
 	margin: 0 10px 10px 0;
 }
+
+
+/* Move tagline to left, hide social icons */
+.navbar-wrapper .navbar h2 {
+	float: left;
+	text-align: left;
+}
+.navbar-inner .social-block {
+display:        none;;
+}
