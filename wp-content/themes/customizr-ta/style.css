@@ -33,3 +33,20 @@
 .navbar-inner .social-block {
 display:        none;;
 }
+
+/* Container for holding old ASP website */
+.gateway-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.gateway-container iframe,
+.gateway-container object,
+.gateway-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
