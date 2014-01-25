@@ -18,7 +18,7 @@ body { background-color: #cccccc; background-repeat: repeat-y; background-positi
 
 <body>
 <?php while (have_posts()) : the_post(); ?>
-<div id="page-content">
+<div id="entry-content">
 	<?php the_content(); endwhile; ?>
 </div>
 </body>
