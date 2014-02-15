@@ -1,6 +1,9 @@
 <?php
 /*
- * default template for the [pdb_record] shortcode for editing a record on the frontend
+ * template for the [pdb_record] shortcode for editing a record on the frontend
+ *
+ * Peter Rooke
+ * includes call to function that gets the course details in place of course ID
  *
  * this template uses a table to format the form
  */
@@ -35,8 +38,15 @@
         <th><?php $this->field->print_label() ?></th>
         <td id="<?php $this->field->print_element_id() ?>">
       
+	<?php
+	/*
+	 * Peter Rooke
+	 * for the first field (assumed to be the course ID),
+	 * display the course details returned by ta_course_details
+	 */
+	?>
  	<?php if ($first_field) : ?>
-		<?php   echo peter_course_info( $this->field->print_value( false ) ); 
+		<?php   echo ta_course_details( $this->field->print_value( false ) ); 
 			$first_field = false; ?>
  	<?php else: ?>
  		<?php $this->field->print_element(); ?>

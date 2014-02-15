@@ -1,6 +1,9 @@
 <?php
 /*
- * default template for signup form
+ * template for signup form
+ *
+ * Peter Rooke
+ * added hidden field containing the course ID passed via the URL
  *
  * If the signup form setting "Show Field Groups" is selected, the form fields
  * will be grouped by the field groups that have their "visible" attribute
