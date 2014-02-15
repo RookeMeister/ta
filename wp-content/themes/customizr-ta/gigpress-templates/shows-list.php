@@ -6,6 +6,11 @@
 //	Moved the description <td> into the same row as the date & venue.
 //	Removed the "gigpress-info active" <tr>
 
+//	Changed abbr to span
+//	Added link to register page
+//	Added title for link, and removed existing date title
+//	Added course_id parameter to link
+
 ?>
 
 <tbody class="vevent">
@@ -13,11 +18,11 @@
 	<tr class="gigpress-row <?php echo $class; ?>">
 	
 		<td class="gigpress-date">
-			<abbr class="dtstart" title="<?php echo $showdata['iso_date']; ?>"><?php echo $showdata['date']; ?></abbr>
+			<a href="<?php get_site_url(); ?>/ta/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
 		<?php if($showdata['end_date']) : ?>
-			- <abbr class="dtend" title="<?php echo $showdata['iso_end_date']; ?>">
+			- <span class="dtend" title="<?php echo $showdata['iso_end_date']; ?>">
 				<?php echo $showdata['end_date']; ?>
-			</abbr>
+			</span>
 		<?php endif; ?>
 			<span class="hide url"><?php echo ($showdata['related_url']) ? $showdata['related_url'] : GIGPRESS_URL; ?></span>
 		</td>
