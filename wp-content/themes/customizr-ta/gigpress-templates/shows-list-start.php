@@ -15,11 +15,18 @@
 	$cols = 4;
 	$cols = ($total_artists == 1 || $artist || $group_artists == 'yes') ? $cols : $cols + 1;
 	$cols = (!empty($gpo['display_country'])) ? $cols + 1 : $cols;
+	if ( is_user_logged_in() ) {
+		$cols + 1;
+	};
 ?>
 
 <table class="gigpress-table <?php echo $scope; ?>" cellspacing="0">
 	<tbody>
 		<tr class="gigpress-header">
+
+		<?php if( is_user_logged_in() ) : ?>
+			<th scope="col" class="gigpress-course">Course</th>
+		<?php endif; ?>
 			<th scope="col" class="gigpress-date"><?php _e("Date", "gigpress"); ?></th>
 		<?php if( (!$artist && $group_artists == 'no') && $total_artists > 1) : ?>
 			<th scope="col" class="gigpress-artist"><?php echo wptexturize($gpo['artist_label']); ?></th>
@@ -30,6 +37,7 @@
 			<th scope="col" class="gigpress-country"><?php _e("Country", "gigpress"); ?></th>
 		<?php endif; ?>
 			<th scope="col" class="gigpress-details">Details</th>
+		
 		</tr>
 	</tbody>
 	

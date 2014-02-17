@@ -10,15 +10,23 @@
 //	Added link to register page
 //	Added title for link, and removed existing date title
 //	Added course_id parameter to link
+//	Added course_id column
 
 ?>
 
 <tbody class="vevent">
 	
 	<tr class="gigpress-row <?php echo $class; ?>">
+
+<?php
+if ( is_user_logged_in() ) {
+?>
+	<td class="gigpress-id"><?php echo $showdata['id']; ?></td>
+<?php
+};
+?>
 	
 		<td class="gigpress-date">
-
 
 <?php
 if ( is_user_logged_in() ) {
