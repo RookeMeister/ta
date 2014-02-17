@@ -87,17 +87,22 @@ function ta_admin_bar_render()
 add_shortcode( 'ta_signup', 'ta_signup_shortcode' );
 function ta_signup_shortcode()
 {
-global $wpdb;
-$result = $wpdb->get_row( $wpdb->prepare("
-	SELECT artist_name, venue_name, show_date, show_time 
-	FROM wp_gigpress_shows, wp_gigpress_artists, wp_gigpress_venues
-	WHERE show_id = %d 
-	and wp_gigpress_shows.show_artist_id = wp_gigpress_artists.artist_id
-	and wp_gigpress_shows.show_venue_id = wp_gigpress_venues.venue_id",
-		$_GET['course']), ARRAY_A );
-$chosen_course = $result['artist_name'] . " " . $result['venue_name'] . " " .  $result['show_date'] . " " .  $result['show_time'];
+$chosen_course = ta_course_details( $_GET['course'] );
 $form = do_shortcode('[pdb_signup]');
 return $chosen_course . $form;
+}
+
+// Peter Rooke
+//----------------------------------------------------------
+// Add shortcode and function to display participants
+//----------------------------------------------------------
+add_shortcode( 'ta_pdb_list', 'ta_pdb_list_shortcode' );
+function ta_pdb_list_shortcode()
+{
+$course_id = $_GET['course'];
+$chosen_course = ta_course_details( $course_id );
+$list = do_shortcode("[pdb_list filter=\"course_id=$course_id\"]");
+return $chosen_course . $list;
 }
 
 // Peter Rooke
@@ -108,13 +113,13 @@ function ta_course_details( $course)
 {
 global $wpdb;
 $result = $wpdb->get_row( $wpdb->prepare("
-	SELECT artist_name, venue_name, show_date, show_time 
+	SELECT artist_name, venue_name, venue_city, show_date, show_time 
 	FROM wp_gigpress_shows, wp_gigpress_artists, wp_gigpress_venues
 	WHERE show_id = %d 
 	and wp_gigpress_shows.show_artist_id = wp_gigpress_artists.artist_id
 	and wp_gigpress_shows.show_venue_id = wp_gigpress_venues.venue_id",
 		$course), ARRAY_A );
-return $result['artist_name'] . " " . $result['venue_name'] . " " .  $result['show_date'] . " " .  $result['show_time'];
+return $result['artist_name'] . " " . $result['venue_name'] . ", " . $result['venue_city'] . " " .  $result['show_date'] . " " .  $result['show_time'];
 }
 
 ?>

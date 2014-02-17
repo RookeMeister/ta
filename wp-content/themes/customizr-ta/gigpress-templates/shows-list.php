@@ -18,7 +18,19 @@
 	<tr class="gigpress-row <?php echo $class; ?>">
 	
 		<td class="gigpress-date">
-			<a href="<?php get_site_url(); ?>/ta/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
+
+
+<?php
+if ( is_user_logged_in() ) {
+?>
+    <a href="<?php get_site_url(); ?>/ta/participants/?course=<?php echo $showdata['id']; ?>" title="Show participants"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
+<?php
+} else { ?>
+    <a href="<?php get_site_url(); ?>/ta/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
+<?php
+};
+?>
+			
 		<?php if($showdata['end_date']) : ?>
 			- <span class="dtend" title="<?php echo $showdata['iso_end_date']; ?>">
 				<?php echo $showdata['end_date']; ?>
