@@ -42,7 +42,7 @@ function ta_wip_button($wp_admin_bar)
 	$args = array(
 		'id' => 'wip-button',
 		'title' => 'Work In Progress',
-		'href' => 'http://rookemeister.com/ta/wip',
+		'href' => 'http://test.trainingaspirations.co.nz/wip',
 		'meta' => array(
 			'class' => 'custom-button-class'
 		)
