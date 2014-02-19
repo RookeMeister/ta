@@ -31,10 +31,10 @@ if ( is_user_logged_in() ) {
 <?php
 if ( is_user_logged_in() ) {
 ?>
-    <a href="<?php get_site_url(); ?>/ta/participants/?course=<?php echo $showdata['id']; ?>" title="Show participants"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
+    <a href="<?php get_site_url(); ?>/participants/?course=<?php echo $showdata['id']; ?>" title="Show participants"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
 <?php
 } else { ?>
-    <a href="<?php get_site_url(); ?>/ta/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
+    <a href="<?php get_site_url(); ?>/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
 <?php
 };
 ?>
