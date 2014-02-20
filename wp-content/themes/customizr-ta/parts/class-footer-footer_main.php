@@ -28,7 +28,9 @@ class TC_footer_main {
         add_action ( '__footer'					, array( $this , 'tc_colophon_display' ), 20 );
         add_action ( '__colophon'				, array( $this , 'tc_colophon_left_block' ), 10 );
         add_action ( '__colophon'				, array( $this , 'tc_colophon_center_block' ), 20 );
-        add_action ( '__colophon'				, array( $this , 'tc_colophon_right_block' ), 30 );
+	// Peter Rooke
+	// remove 'back to top' block
+        // add_action ( '__colophon'				, array( $this , 'tc_colophon_right_block' ), 30 );
     }
 
 
@@ -145,15 +147,17 @@ class TC_footer_main {
     	
 	// Peter Rooke
 	// modified original name of designer to RookeMeister
+	// removed link around website title
+	// removed link around RookeMeister
     	echo apply_filters(
     		'tc_credits_display',
     		sprintf('<div class="%1$s">%2$s</div>',
 	    		apply_filters( 'tc_colophon_center_block_class', 'span4 credits' ),
-	    		sprintf( '<p> &middot; &copy; %1$s <a href="%2$s" title="%3$s" rel="bookmark">%3$s</a> &middot; Crafted by %4$s &middot;</p>',
+	    		sprintf( '<p> &middot; &copy; %1$s %3$s &middot; Crafted by %4$s &middot;</p>',
 					    esc_attr( date( 'Y' ) ),
 					    esc_url( home_url() ),
 					    esc_attr(get_bloginfo()),
-					    '<a href="'.TC_WEBSITE.'">RookeMeister</a>'
+					    'RookeMeister'
 				)
     		)
     	);
