@@ -42,7 +42,7 @@
 	margin: .5em 0;
 }
 .widget_wp_sidebarlogin form .input {
-	width: 100%;
+	width: 50%;
 	margin: 0px;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */

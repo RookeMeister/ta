@@ -50,3 +50,19 @@ display:        none;;
     width: 100%;
     height: 100%;
 }
+
+/* sizing changes to size tap targets appropriately */
+.login-username label {
+    margin-bottom: 10px;
+}
+.login-password label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-submit input {
+    margin-top: 10px;
+}
+footer#footer a {
+    font-size: 13px;
+}
+/* End sizing changes */
