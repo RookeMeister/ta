@@ -51,7 +51,7 @@ display:        none;;
     height: 100%;
 }
 
-/* sizing changes to size tap targets appropriately */
+/* sizing changes to size tap targets appropriately  and also link color */
 .login-username label {
     margin-bottom: 10px;
 }
@@ -64,5 +64,6 @@ display:        none;;
 }
 footer#footer a {
     font-size: 13px;
+    color: #f78c40;
 }
 /* End sizing changes */
