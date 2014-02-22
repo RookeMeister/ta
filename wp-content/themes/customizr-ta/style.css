@@ -67,3 +67,14 @@ footer#footer a {
     color: #f78c40;
 }
 /* End sizing changes */
+
+/* positioning logo */
+.tc-header .brand a {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.row-fluid [class*="span"] {
+    margin-left: 0%;
+}
+/* End positioning logo */
+
