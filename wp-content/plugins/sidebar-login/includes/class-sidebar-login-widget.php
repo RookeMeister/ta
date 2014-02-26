@@ -293,7 +293,7 @@ class Sidebar_Login_Widget extends WP_Widget {
 		        'label_log_in' 		=> __( 'Login &rarr;', 'sidebar_login' ),
 			// Peter Rooke
 			// turned off the remember feature, and set its default value to false
-		        'remember' 			=> false,
+		        'remember' 		=> true,
 		        'value_remember' 	=> false
 		    ) );
 

@@ -53,14 +53,17 @@ display:        none;;
 
 /* sizing changes to size tap targets appropriately  and also link color */
 .login-username label {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 .login-password label {
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 10px;
 }
+.login-remember label {
+    margin-top: 9px;
+}
 .login-submit input {
-    margin-top: 10px;
+    margin-top: 9px;
 }
 footer#footer a {
     font-size: 13px;
