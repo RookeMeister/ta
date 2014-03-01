@@ -81,3 +81,7 @@ footer#footer a {
 }
 /* End positioning logo */
 
+/* reduce the space between the heading and content of posts */
+.featurette-divider {
+  margin: 15px 0;
+}
