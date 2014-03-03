@@ -86,7 +86,7 @@ footer#footer a {
   margin: 15px 0;
 }
 
-/* format the input fields for contact form
+/* format the input fields for contact form */
 span.wpcf7-checkbox span.wpcf7-list-item { display: block; }
 span.wpcf7-radio span.wpcf7-list-item { display: inline; }
 
