@@ -83,10 +83,17 @@ footer#footer a {
 
 /* reduce the space between the heading and content of posts */
 .featurette-divider {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 /* format the input fields for contact form */
-span.wpcf7-checkbox span.wpcf7-list-item { display: block; }
-span.wpcf7-radio span.wpcf7-list-item { display: inline; }
+span.wpcf7-checkbox span.wpcf7-list-item {
+    display: block;
+}
+span.wpcf7-radio span.wpcf7-list-item {
+    display: inline;
+}
 
+/* hover for courses display */
+.gigpress-row:hover { color: white; background: lightgrey ;  }
+.gigpress-row:hover td { background: transparent; }

@@ -30,6 +30,7 @@
   <?php $this->print_form_head(); // this must be included before any fields are output. hidden fields may be added here as an array argument to the function ?>
 
     <input name="course_id" type="hidden"   value="<?php echo $_GET['course']; ?>" />
+    <table class="form-table pdb-signup">
 
       <?php while ( $this->have_groups() ) : $this->the_group(); ?>
 
@@ -44,15 +45,16 @@
           </td>
         </tr>
         <?php else : ?>
+      <tbody class="field-group">
         <?php endif; // end group title/description row ?>
 
         <?php while ( $this->have_fields() ) : $this->the_field(); ?>
 
-        <br/>
+        <tr class="<?php $this->field->print_element_class() ?>">
 
-          <?php $this->field->print_label(); // this function adds the required marker ?>
+          <th><?php $this->field->print_label(); // this function adds the required marker ?></th>
 
-          <br/>
+          <td id="<?php $this->field->print_element_id() ?>">
 
             <?php $this->field->print_element(); ?>
 
@@ -60,31 +62,32 @@
             <span class="helptext"><?php $this->field->print_help_text() ?></span>
             <?php endif ?>
             
-          
+          </td>
 
-        
+        </tr>
   
         <?php endwhile; // fields ?>
         
-        
+        </tbody><tbody class="field-group field-group-submit">
 
       <?php endwhile; // groups ?>
       
-        <br/><br/>
+        <tr>
+          <td class="submit-buttons">
             
            <?php $this->print_submit_button('button-primary'); // you can specify a class for the button ?>
             
-          
-
+          </td>
+          <td class="submit-buttons">
             
            <?php $this->print_retrieve_link(); // this only prints if enabled in the settings ?>
            
-          
+          </td>
+        </tr>
         
-        
+      </tbody>
       
-      
-    
+    </table>
     
   <?php $this->print_form_close() ?>
   

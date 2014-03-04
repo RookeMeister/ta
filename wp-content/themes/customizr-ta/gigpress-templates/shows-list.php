@@ -83,7 +83,7 @@ if ( is_user_logged_in() ) {
 			<?php endif; ?>
 			
 			<?php if($showdata['address']) : ?> 
-				<span class="gigpress-info-item"><span class="gigpress-info-label">at</span> <?php echo $showdata['address']; ?>.</span>
+				<span class="gigpress-info-item">at <?php echo $showdata['address']; ?></span>
 			<?php endif; ?>
 			
 			<?php if($showdata['venue_phone']) : ?>
