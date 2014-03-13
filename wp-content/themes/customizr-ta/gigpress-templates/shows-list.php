@@ -21,23 +21,14 @@
 <?php
 if ( is_user_logged_in() ) {
 ?>
-	<td class="gigpress-id"><?php echo $showdata['id']; ?></td>
+	<td class="gigpress-id"><a href="<?php get_site_url(); ?>/participants/?course=<?php echo $showdata['id']; ?>" title="Show participants"><span class="dtstart"><?php echo $showdata['id']; ?></span></a></td>
 <?php
 };
 ?>
 	
 		<td class="gigpress-date">
 
-<?php
-if ( is_user_logged_in() ) {
-?>
-    <a href="<?php get_site_url(); ?>/participants/?course=<?php echo $showdata['id']; ?>" title="Show participants"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
-<?php
-} else { ?>
     <a href="<?php get_site_url(); ?>/training/register/?course=<?php echo $showdata['id']; ?>" title="Register for course"><span class="dtstart"><?php echo $showdata['date']; ?></span></a>
-<?php
-};
-?>
 			
 		<?php if($showdata['end_date']) : ?>
 			- <span class="dtend" title="<?php echo $showdata['iso_end_date']; ?>">
