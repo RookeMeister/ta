@@ -46,6 +46,8 @@
         <?php else : ?>
         <?php endif; // end group title/description row ?>
 
+* Required fields<br/>
+
         <?php while ( $this->have_fields() ) : $this->the_field(); ?>
 
         <br/>
