@@ -12,6 +12,17 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+/* limit body width to prevent slider pixellation & super-size images*/
+body {
+max-width: 1170px;
+margin: 0 auto;
+}
+
+/* registration error messages in red */
+.pdb-error {
+color: red
+}
+
 /* In order to get the image floating to the left
  when displaying a list of posts with title, excerpt, and the thumbnail, using Display Posts Shortcode
 */
@@ -23,7 +34,6 @@
 	float: left;
 	margin: 0 10px 10px 0;
 }
-
 
 /* Move tagline to left, hide social icons */
 .navbar-wrapper .navbar h2 {
