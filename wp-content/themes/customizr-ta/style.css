@@ -44,6 +44,16 @@ color: red
 display:        none;;
 }
 
+/* squish nav slightly */
+.navbar .nav > li > a {
+padding-right: 15px;
+}
+
+/* lift dropdown 1px so that it works on Chrome */
+.dropdown-menu {
+margin-top: 1px;
+}
+
 /* Container for holding old ASP website */
 .gateway-container {
     position: relative;
@@ -105,5 +115,5 @@ span.wpcf7-radio span.wpcf7-list-item {
 }
 
 /* hover for courses display */
-.gigpress-row:hover { color: white; background: lightgrey ;  }
+.gigpress-row:hover { color: #3f6f86 !important; background: #e1e1e1 !important;  } /* lose the ! when css found */
 .gigpress-row:hover td { background: transparent; }
